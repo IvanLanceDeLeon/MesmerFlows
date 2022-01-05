@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 
+
+#book{
+    background:white;
+    color:black;
+    padding: 0px;
+    transition:0ms;
+}
+
 :root{
     --overlay-color:red;
 }
@@ -301,7 +309,25 @@ form{
         align-items: center;
     }
     
+    /* .explore{
+        visibility: hidden;
+    } */
+    .card.active{
+        display: block;
+        height: 50%;
+        width: 80vw;
+        background: #111;
+        opacity: 70%;    }
 
+
+    .card.active p{
+    text-overflow: clip;
+    display: inline-block;
+    font-size: .75em;
+    color :#fff;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    }
 }
 
 @media(max-width:720px) {
@@ -318,7 +344,7 @@ form{
     }
     
     .card.active{
-        display:none;
+        height: 50%;
     }
 
     .form{
