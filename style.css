@@ -272,6 +272,9 @@ form{
 }
 
 @media(max-width:1000px){
+
+ 
+
     .showcase,
     .showcase header{
         padding:40px;
@@ -296,22 +299,14 @@ form{
         align-items: center;
     }
     
-    #gigSalad{
-        position: relative;
-        left:25%;
 
-    }
-    
     form{
         display:flex;
         flex-direction:column;
         justify-content: center;
         align-items: center;
     }
-    
-    /* .explore{
-        visibility: hidden;
-    } */
+
     .card.active{
         display: block;
         height: 50%;
@@ -328,6 +323,19 @@ form{
     margin-bottom: 20px;
     margin-top: 0px;
     }
+
+
+    #gigSalad{
+        position:revert;
+    }
+
+
+    .text a{
+        width:100%;
+        text-align: center;
+    }
+
+
 }
 
 @media(max-width:720px) {
@@ -355,11 +363,6 @@ form{
         align-items: center;
     }
     
-    #gigSalad{
-        position: relative;
-        left:26%;
-        margin:5px;
-    }
     
     form{
         display:flex;
@@ -367,7 +370,7 @@ form{
         justify-content: center;
         align-items: center;
     }
-    
+
 
     
 }
@@ -380,9 +383,11 @@ form{
         font-size:2em;
     }
 
+
     #gigSalad{
-        left:0%;
+        position:revert;
     }
+
     
 }
 
@@ -398,9 +403,21 @@ form{
         font-size:5vw;
     }
 
+
     #gigSalad{
-        left:0%;
+        position:revert;
     }
+
+    .social{
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 1px;
+    }
+
     
 }
 

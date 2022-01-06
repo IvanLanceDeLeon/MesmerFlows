@@ -246,7 +246,7 @@ form{
 .col input{
     padding:5px;
     margin:5px;
-    width:30vw;
+    width: 100%;
 }
 
 .form-group textarea{
@@ -257,6 +257,8 @@ form{
 }
 
 
+
+
 @media(max-width:1080px){
     #gigSalad{
         left:30%;
@@ -264,6 +266,17 @@ form{
 }
 
 @media(max-width:1000px){
+    #contactInfo{
+        width:100%;
+    }
+
+    #message{
+        width:100%;
+    }
+    #message textarea{
+        width:100%;
+    }
+
     .showcase,
     .showcase header{
         padding:40px;
@@ -289,9 +302,7 @@ form{
     }
     
     #gigSalad{
-        position: relative;
-        left:25%;
-
+        position: revert;
     }
     
     form{
@@ -301,6 +312,10 @@ form{
         align-items: center;
     }
     
+    .text a{
+        width:100%;
+        text-align:center;
+    }
 
 }
 
@@ -330,9 +345,8 @@ form{
     }
     
     #gigSalad{
-        position: relative;
-        left:26%;
-        margin:5px;
+        position: revert;
+
     }
     
     form{
@@ -342,7 +356,10 @@ form{
         align-items: center;
     }
     
-
+    .text a{
+        width:100%;
+        text-align:center;
+    }
     
 }
 
@@ -354,13 +371,11 @@ form{
         font-size:2em;
     }
 
-    #gigSalad{
-        left:3%;
-    }
+
 
     .text a{
         font-size:.75em;
-        width:24em;
+        width:100%
     }
     
 }
@@ -377,13 +392,11 @@ form{
         font-size:5vw;
     }
 
-    #gigSalad{
-        left:0%;
-    }
+
 
     .text a{
         font-size:.75em;
-        width:24em;
+        width:100%
     }
     
 }
